@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.</title>
+</head>
+<body>
+        <script>
+            let a = parseInt(prompt("Nhập chiều dài hình chữ nhật: "));
+            let b = parseInt(prompt("Nhập chiều rộng hình chữ nhật : "));
+            let s = a*b;
+            if (a>=0&&b>=0) {
+                alert("Diện tích hình chữ nhật là : " +s);
+            }
+            if (a<0) {
+                alert("Không thể nhập số âm!!!");
+            }
+            if (b<0) {
+                alert("Không thể nhập số âm!!!");
+            }
+        </script>
+</body>
+</html>
