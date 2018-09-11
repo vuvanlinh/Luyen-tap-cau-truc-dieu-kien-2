@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7: Giải phương trình bậc 2.</title>
+</head>
+<body>
+      <script>
+          let a = parseInt(prompt("Nhập số a : "));
+          let b = parseInt(prompt("Nhập số b : "));
+          let c = parseInt(prompt("Nhập số c : "));
+          let delta = Math.pow(b,2)-4*a*c;
+          let x1 = (-b + Math.sqrt(delta,2))/(2*a);
+          let x2 = (-b - Math.sqrt(delta,2))/(2*a);
+          if (delta<0) {
+              alert("Phương trình vô nghiệm")
+          }
+          if (delta>=0) {
+              alert("x1 = " + x1);
+              alert("x2 = " +x2);
+          }
+      </script>
+</body>
+</html>
