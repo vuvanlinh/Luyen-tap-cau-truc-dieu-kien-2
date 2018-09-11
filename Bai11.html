@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính thuế thu nhập cá nhân.</title>
+</head>
+<body>
+         <script>
+             const MOTTRIEU = 1000000;
+             const NAMTRIEU = 5000000;
+             const MUOITRIEU = 10000000;
+             let a = parseInt(prompt("Nhập lương của bạn : "));
+             if (a>0&&a<=MOTTRIEU) {
+                 alert("Thuế của bạn là : " + a*5/100)
+             }
+             if (a>MOTTRIEU&&a<=NAMTRIEU){
+                 alert("Thuế của bạn là : " + a*10/100)
+             }
+             if (a>NAMTRIEU&&a<=MUOITRIEU) {
+                 alert("Thuế của bạn là : "+ a*15/100)
+             }
+             if (a>MUOITRIEU) {
+                 alert("Thuế của bạn là : "+ a*20/100)
+             }
+
+
+         </script>
+</body>
+</html>
